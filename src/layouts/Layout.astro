@@ -2,15 +2,23 @@
 import "../css/global.css"
 ---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>GeniuX</title>
 	</head>
 	<body>
+		<nav class="flex fixed flex-row w-screen justify-between items-center px-10 py-5 bg-gray-400">
+			<div class="w-14 h-14 bg-black"></div>
+			<ol class="flex flex-row gap-10 items-center">
+				<li><a href="/">inicio</a></li>
+				<li><a href="about-us">sobre nosotros</a></li>
+				<li><a href="methodology">metodología</a></li>
+			</ol>
+		</nav>
 		<slot />
 	</body>
 </html>

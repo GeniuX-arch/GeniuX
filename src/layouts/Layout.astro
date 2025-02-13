@@ -8,16 +8,23 @@ import "../css/global.css"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<title>GeniuX</title>
 	</head>
 	<body>
-		<nav class="flex fixed flex-row w-screen justify-between items-center px-10 py-5 bg-gray-400">
-			<div class="w-14 h-14 bg-black"></div>
+		<!-- Navbar -->
+		<nav class="fixed text-white text-xl w-screen">
+			<div class="flex flex-row justify-between gap-10 items-center px-10 py-7  text-white text-lg  max-w-[1333px] m-auto">
+
+			<div class="w-14 h-14 bg-white "></div>
 			<ol class="flex flex-row gap-10 items-center">
-				<li><a href="/">inicio</a></li>
-				<li><a href="about-us">sobre nosotros</a></li>
-				<li><a href="methodology">metodología</a></li>
+				<li><a class="" href="/">Inicio</a></li>
+				<li><a href="about-us">Sobre nosotros</a></li>
+				<li><a href="methodology">Metodología</a></li>
 			</ol>
+			</div>
 		</nav>
 		<slot />
 	</body>
@@ -26,6 +33,8 @@ import "../css/global.css"
 <style>
 	html,
 	body {
+		font-family: "Roboto", serif;
+
 		margin: 0;
 		width: 100%;
 		height: 100%;
